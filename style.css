@@ -1,0 +1,304 @@
+/* --- Estilos Generales --- */
+body {
+  margin: 0;
+  font-family: "Yeseva One", serif;
+  background-color: rgb(255, 255, 255);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #b4890a;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: 2px solid #b4890a;
+  border-radius: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.cta-button:hover {
+  background-color: #b4890a;
+  color: white;
+}
+
+/* --- Contenedores principales --- */
+.principal {
+  background-color: #d6d6d6;
+  padding: 20px;
+}
+
+/*ESTILOS NOSOTROS*/
+
+.cntr-nosotros {
+  margin-left: 100px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+
+}
+
+
+.imagen {
+  flex: 1;
+  text-align: right;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 10px;
+}
+
+.titulos {
+  color: #b4890a;
+
+}
+
+/*ESTILOS NUESTRO ENFOQUE*/
+
+.cntr-enfoque {
+  padding-left: 100px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.img-enfoque {
+  flex: 1;
+  text-align: left;
+}
+
+.img-enfoque img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 30px;
+  border-radius: 300px;
+}
+
+.texto {
+  flex: 2;
+  text-align: left;
+  text-align: center;
+}
+
+/*ESTILOS OPTAR POR NOSOTROS*/
+
+.cntr-optar {
+  margin-left: 100px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.img-optar {
+  flex: 1;
+  text-align: right;
+}
+
+.img-optar img {
+  border-radius: 300px;
+  max-width: 100%;
+  height: auto;
+  padding-right: 10px;
+}
+
+.nosotros {
+  color: #b4890a;
+
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: #ffffff;
+  color: #333;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contacto-redes {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* Asegura que los elementos se acomoden bien en pantallas pequeñas */
+}
+
+.contacto-redes .contacto,
+.contacto-redes .redes {
+  flex: 1;
+  min-width: 250px;
+  /* Evita que los iconos se estiren demasiado */
+}
+
+.redes ul {
+  display: flex;
+  flex-direction: column;
+  /* Cambié para que los iconos estén en columna */
+  align-items: center;
+  /* Centra los iconos verticalmente */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  /* Espacio entre los iconos */
+}
+
+.redes ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 0.85em;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom a:hover {
+  color: #b4890a;
+}
+
+/* --- Media Queries Responsivos --- */
+
+/* Para pantallas menores a 768px (tablets y móviles) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .cta-button {
+    margin-top: 10px;
+  }
+
+  .cntr-nosotros,
+  .cntr-enfoque,
+  .cntr-optar {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .imagen img,
+  .img-enfoque img,
+  .img-optar img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .contacto-redes .contacto,
+  .contacto-redes .redes {
+    flex: 1;
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .redes ul {
+    justify-content: center;
+    /* Centra los íconos en pantallas pequeñas */
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
+
+/* Para pantallas menores a 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  .logo img {
+    height: 60px;
+    width: 60px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .cta-button {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+
+  .redes ul {
+    justify-content: center;
+    /* Centra los íconos en pantallas pequeñas */
+  }
+
+  .redes ul li a img {
+    width: 25px;
+    height: 25px;
+  }
+}

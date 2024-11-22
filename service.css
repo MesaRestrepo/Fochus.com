@@ -1,0 +1,330 @@
+/* Configuración general */
+body {
+    margin: 0;
+    font-family: "Yeseva One", serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* Adjust for smaller screens */
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #b4890a;
+}
+
+/* Call to Action button */
+.cta-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 2px solid #b4890a;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.cta-button:hover {
+    background-color: #b4890a;
+    color: white;
+}
+
+/* Título */
+#titulo {
+    text-align: center;
+    color: #b4890a;
+}
+
+.video-header {
+    position: relative;
+}
+
+.background-video {
+    width: 100%;
+    height: auto;
+}
+
+/* Contenedor Principal */
+.principal {
+    background-color: #d6d6d6;
+}
+
+/* CONTAINER MARKETING DIGITAL */
+.cntr-mrkt {
+    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.texto {
+    text-align: left;
+    padding: 20px;
+}
+
+.texto h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.texto p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.texto li {
+    margin-bottom: 10px;
+}
+
+.img-mrkt {
+    flex: 1;
+    text-align: right;
+}
+
+.img-mrkt img {
+    border-radius: 100px;
+    max-width: 100%;
+    height: 400px;
+    width: 450px;
+}
+
+.titulos {
+    color: #b4890a;
+}
+
+/* Video */
+.video-mk {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-color: #000000;
+}
+
+.video-mk video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTAINER ESTRATEGIAS Y DESARROLLO */
+.cntr-estrg {
+    padding: 20px; /* Ajusta según sea necesario */
+    max-width: 800px; /* Limita el ancho del contenedor */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Asegura que haya espacio entre imágenes y texto */
+    color: #000000;
+}
+
+.img-estrg {
+    display: flex;
+    flex: 1; /* Las imágenes ocuparán una parte proporcional del contenedor */
+    gap: 15px; /* Espaciado entre imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente dentro de su área */
+}
+
+.img-estrg img {
+    width: 300px; /* Ajusta el tamaño de las imágenes para que sean proporcionales */
+    height: auto;
+}
+
+.texto {
+    flex: 2; /* El texto ocupará el doble de espacio que las imágenes */
+    text-align: left; /* Mantén el texto alineado a la izquierda */
+    padding-left: 20px; /* Espaciado entre texto e imágenes */
+}
+
+.texto h1 {
+    font-size: 1.8rem; /* Tamaño del título proporcionado */
+    font-weight: bold; /* Resalta el título */
+}
+
+.texto p {
+    font-size: 1rem; /* Tamaño proporcional para los párrafos */
+    line-height: 1.5; /* Espaciado entre líneas para mayor legibilidad */
+}
+
+.texto li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contacto-redes {
+    display: flex;
+    gap: 20px; /* Espaciado entre CONTACTO y SÍGUENOS */
+    align-items: flex-start; /* Alinea los contenidos al inicio */
+    flex-wrap: wrap;
+}
+
+.contacto-redes .contacto,
+.contacto-redes .redes {
+    flex: 1;
+}
+
+.redes ul {
+    display: flex;
+    flex-direction: column; /* Coloca los iconos verticalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.redes ul li {
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+.redes ul li a img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 0.85em;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom a:hover {
+    color: #b4890a;
+}
+
+.footer-column .iconos li {
+    margin-bottom: 10px;
+    display: block;
+    /* Coloca los iconos verticalmente en pantallas pequeñas */
+}
+
+.footer-column .iconos li a img {
+    width: 30px;
+    /* Ajusta tamaño más grande en pantallas pequeñas */
+    height: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+
+    .cntr-mrkt,
+    .cntr-estrg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-mrkt img,
+    .img-estrg img {
+        max-width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .cta-button {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .cntr-mrkt .texto h1,
+    .cntr-estrg .texto h1 {
+        font-size: 1.5rem;
+    }
+
+    .img-mrkt img,
+    .img-estrg img {
+        max-width: 100%;
+    }
+
+    .video-mk .video-header {
+        aspect-ratio: 4/3;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    .footer-column {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-mk {
+        height: auto;
+    }
+}
